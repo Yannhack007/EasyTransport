@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*>*{
+  font-family:'Gumela', Gumela;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --orange:#ec7216;
+  --black:#001c34;  
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+    --orange:#ec7216;
+    --black:#001c34;  
+  }
+}
+
+body {
+  font-family: Gumela;
+  color: var(--black);
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+.text-hover:hover{
+  color: var(--orange);
+}
+button{
+  background-color: var(--orange);
+  padding: 11px 26px 11px 26px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0px 5px 7px 1px #58748b;
+}
+
+button:hover{
+  transition: all ease-in-out;
+  transition-duration: 500ms;
+  background-color: var(--black);
+  color: var(--orange);
+  box-shadow: 0px 5px 7px 1px #f1a56a;
+}
+.send{
+  box-shadow: 0px 0px 0px 0px;
+}
+.send:hover{
+  box-shadow: 0px 0px 0px 0px;
+  background-color: var(--orange);
+}
+.h31:hover{
+  transition-duration: 500ms;
+  top:-55%;
+
+  .barre{
+    background-color: white;
+    transition-duration: 500ms;
+  
+  }
+}
+
+.h32:hover{
+  transition-duration: 500ms;
+  top:-55%;
+
+  .barre{
+    background-color: white;
+    transition-duration: 500ms;
+  
+  }
+}
+
+.car{
+  border: 1px solid #b9bfc4;
+}
